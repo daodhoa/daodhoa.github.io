@@ -50,12 +50,12 @@ setInterval(() => {
 
 // GALLERY
 const images = [
-  "assets/images/gallery1.jpg",
-  "assets/images/gallery2.jpg",
-  "assets/images/gallery3.jpg",
-  "assets/images/gallery4.jpg",
-  "assets/images/gallery5.jpg",
-  "assets/images/gallery6.jpg"
+  "assets/images/gallery1.webp",
+  "assets/images/gallery2.webp",
+  "assets/images/gallery3.webp",
+  "assets/images/gallery4.webp",
+  "assets/images/gallery5.webp",
+  "assets/images/gallery6.webp"
 ];
 let currentIndex = 0;
 

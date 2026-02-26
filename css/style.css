@@ -61,7 +61,7 @@ section:last-child {
   display: flex;
   align-items: flex-end;
   justify-content: center;
-  background: url('../assets/images/header.jpg') center top / cover no-repeat;
+  background: url('../assets/images/header.webp') center top / cover no-repeat;
   overflow: hidden;
 }
 
