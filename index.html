@@ -1,341 +1,327 @@
-<!doctype html>
-<html lang="en">
-
-<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+<!DOCTYPE html>
+<html lang="vi">
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Dao Duy Hoa - Software Engineer Resume</title>
-    <!-- Default style sheets -->
-    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico" />
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,700|Raleway:100,300" rel="stylesheet">
-    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
-        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
+    <title>Hoà & Hiền</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Great+Vibes&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body class="homepage ver-one" data-spy="scroll" data-target=".main-navigation">
-    <div class="site-mobile-menu site-navbar-target">
-        <div class="site-mobile-menu-header">
-            <div class="site-mobile-menu-close mt-3">
-                <span class="icon-close2 js-menu-toggle"></span>
-            </div>
-        </div>
-        <div class="site-mobile-menu-body"></div>
-    </div> <!-- .site-mobile-menu -->
-    <div class="site-navbar-wrap">
-        <div class="site-navbar site-navbar-target js-sticky-header">
-            <div class="container">
-                <div class="row align-items-center">
-                    <div class="col-10">
-                        <nav id="site-navigation" class="site-navigation text-right" role="navigation">
-                            <div class="container">
-                                <div class="d-inline-block d-lg-none ml-md-0 mr-auto py-3"><a href="#"
-                                        class="site-menu-toggle js-menu-toggle text-white"><span
-                                            class="icon-menu h3"></span></a></div>
-
-                                <ul class="site-menu main-menu js-clone-nav d-none d-lg-block">
-                                    <li class="active"><a href="#site-header"><i class="fa fa-home" aria-hidden="true"></i> Home</a></li>
-                                    <li><a href="#about"><i class="fa fa-user" aria-hidden="true"></i> About</a></li>
-                                    <li><a href="#skills"><i class="fa fa-signal" aria-hidden="true"></i> Skills</a></li>
-                                    <li><a href="#experiences"><i class="fa fa-bar-chart-o" aria-hidden="true"></i> Experiences</a></li>
-                                    <li><a href="#education"><i class="fa fa-book" aria-hidden="true"></i> Education</a></li>
-                                </ul>
-                            </div>
-                        </nav>
-                    </div>
-                </div>
-            </div>
+<body style="overflow: hidden;">
+    <!-- PRELOADER -->
+    <div id="preloader">
+        <div class="loader-content">
+            <div class="heart-loading">❤</div>
+            <p class="loading-text">Hoà & Hiền</p>
         </div>
     </div>
-    <header id="site-header">
-        
-        <div id="banner" class="transparent-section" data-image="images/background.jpeg" data-color="63, 90, 117" 
-            style="background-repeat: no-repeat;background-size: cover;"
-            data-transparency="0.80">
-            <div class="transparent-content parallax-style">
-                <div class="header-content">
-                    <div class="container">
-                        <div class="site-title">
-                            <h1 class="site-name">DAO DUY HOA</h1>
-                        </div>
-                        <!-- /.site-title -->
-                        <h3 class="site-slogan">SOFTWARE ENGINEER</h3>
-                        <!-- /.site-slogan-->
-                        <div class="social-link">
-                            <ul class="social-profiles">
-                                <li class="item"><a href="https://www.linkedin.com/in/dao-duy-hoa-849b14165/"
-                                        class="fa-linkedin" target="_blank"><span>LinkedIn</span></a></li>
-                                <li class="item"><a href="#"
-                                        class="fa-stack-overflow" target="_blank"><span>Stack Overflow</span></a></li>
-                                <li class="item"><a href="https://github.com/daodhoa" class="fa-github"
-                                        target="_blank"><span>Github</span></a></li>
-                                <li class="item"><a href="#" class="fa-globe"
-                                        target="_blank"><span>My Blog</span></a></li>
-                            </ul>
-                        </div>
-                        <!-- /.social-link -->
-                    </div>
+
+    <div class="main-wrapper">
+        <!-- MUSIC -->
+        <audio id="bgMusic" loop>
+            <source src="assets/music/wedding.mp3" type="audio/mpeg">
+        </audio>
+
+        <div class="music-wrapper">
+            <button class="music-btn-new" onclick="toggleMusic()">
+                <div class="record-icon">
+                    <img src="assets/images/record.png" alt="Music"
+                        onerror="this.src='https://cdn-icons-png.flaticon.com/512/121/121016.png'">
                 </div>
-                <!-- /.header-content -->
-            </div>
-            <!-- /.transparent-content -->
+            </button>
         </div>
-        <!-- /.transparent-section -->
-    </header>
-    <!-- /#site-header -->
-    <section id="about" class="default-section" data-scroll-reveal="enter from the bottom over .5s">
-        <div class="section-heading">
-            <h2 class="section-title">About me</h2>
-        </div>
-        <!-- /.section-heading -->
-        <div class="about-container">
-            <div class="container">
-                <div class="col-md-3" data-scroll-reveal="enter from the left after .5s">
-                    <div class="profile-photo section-box">
-                        <img src="images/profile-img-new.jpg" alt="Triet Pham" class="profile-image img-responsive">
-                    </div>
-                    <!-- /.profile-photo -->
+
+        <!-- HEADER -->
+        <section class="header">
+            <div class="header-container">
+                <div class="header-bg-blur"></div>
+
+                <div class="names-top-right">
+                    <p class="name-script">Hoà</p>
+                    <div class="heart-separator">❤</div>
+                    <p class="name-script" style="margin-top: 5px;">Hiền</p>
                 </div>
-                <div class="col-md-6" data-scroll-reveal="enter from the right after .5s">
-                    <div class="profile-details section-box">
-                        <h2 class="title">Summary</h2>
-                        <div class="about-content">
-                            <p>I'm Dao Duy Hoa. A Software Engineer with <b>4 years of experience</b> in software development, with knowledge of <i> Web Development, Systems Architecture and Database Design, Docker.</i></p>
-                            <p>Coding, learning new languages and technologies is what i am passionate about. I am considered a
-                                team-player because I like to help other and tend to work well within the group.</p>
-                            <p>I enjoy coding, reading IT blogs, News and playing games in my free time.</p>
-                            <p>My other hobby is soccer and running.</p>
-                            <p>My life motto is: Try to improve 1% every day</p>
+
+                <div class="header-info-main">
+                    <div class="invite-details">
+                        <div class="invite-section">
+                            <h3>THƯ MỜI TIỆC CƯỚI</h3>
+                            <p class="time">THỨ BẢY - 16:00</p>
+                            <p class="date">28.03.2026</p>
                         </div>
-                        <!-- /.about-content -->
-                        <!-- <a href="assets/[Full Stack Developer] Dao Duy Hoa.pdf" class="btn fa-download download-btn"
-                            target="_blank">My CV</a> -->
+                        <div class="divider"></div>
+                        <div class="invite-section">
+                            <h3>LỄ THÀNH HÔN</h3>
+                            <p class="time">CHỦ NHẬT - 14:00</p>
+                            <p class="date">29.03.2026</p>
+                        </div>
                     </div>
-                    <!-- /.profile-details -->
-                </div>
-                <div class="col-md-3" data-scroll-reveal="enter from the right after .5s">
-                    <div class="profile-details section-box">
-                        <h2 class="title">Personal Info</h2>
-                        <address>
-                            <ul class="address-line">
-                                <li class="fa-birthday-cake">12/07/1997</li>
-                                <li class="fa-hospital-o">Ha noi</li>
-                                <li class="fa-map-marker">Cau giay, Ha noi</li>
-                                <li class="fa-envelope">
-                                    <a href="mailto:duyhoa.dao1207@gmail.com">duyhoa.dao1207@gmail.com</a>
-                                </li>
-                                <!-- <li class="fa-skype"></li> -->
-                            </ul>
-                        </address>
-                        <!-- /.contact-info -->
-                    </div>
-                    <!-- /.profile-details -->
                 </div>
             </div>
-        </div>
-        <!-- /.about-container -->
-    </section>
-    <!-- /#about -->
-    <section id="skills" class="default-section" data-scroll-reveal="enter from the bottom over .5s">
-        <div class="section-heading">
-            <h2 class="section-title">SKILLS</h2>
-        </div>
-        <!-- /.section-heading -->
-        <div class="container">
-            <div class="skills-container">
-                <div class="col-md-4" data-scroll-reveal="enter from the left after .5s">
-                    <div class="section-box">
-                        <h2 class="box-title">Programming languages</h2>
-                        <ul>
-                            <li>PHP</li>
-                            <li>Java</li>
-                            <li>HTML / CSS</li>
-                        </ul>
-                        <h2 class="box-title">Frameworks & platforms</h2>
-                        <ul>
-                            <li>Laravel</li>
-                            <li>Spring</li>
-                            <li>RestfulAPI / JSON</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-md-4" data-scroll-reveal="enter from the right after .5s">
-                    <div class="section-box">
-                        <h2 class="box-title">Database</h2>
-                        <ul>
-                            <li>MYSQL / MariaDB</li>
-                            <li>Oracle</li>
-                        </ul>
-                        <h2 class="box-title">Version Control</h2>
-                        <ul>
-                            <li>Git (Github, GitLab)</li>
-                        </ul>
-                        <h2 class="box-title">DevOps</h2>
-                        <ul>
-                            <li>Docker</li>
-                            <li>Jenkins</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-md-4" data-scroll-reveal="enter from the right after .5s">
-                    <div class="section-box">
-                        <h2 class="box-title">Foreign Language (English)</h2>
-                        <ul>
-                            <li>Communicate: ordinary</li>
-                            <li>Read & write: average</li>
-                        </ul>
-                        <h2 class="box-title">Knowledge & soft skills</h2>
-                        <ul>
-                            <li>Understanding about Software development process</li>
-                            <li>Understanding what is clean code, be responsible at work, especially writing code</li>
-                            <li>Business communication, good time management, ...</li>
-                        </ul>
-                    </div>
-                </div>
-                <!-- /.skills-container -->
+        </section>
+
+        <!-- ẢNH -->
+        <!-- <section class="photo">
+            <img src="assets/images/couple.jpg">
+        </section> -->
+
+        <!-- LỜI NHẮN -->
+        <section class="message">
+            <p class="quote">
+                “Chúng ta đã cùng nhau đi qua nhiều thăng trầm, để nhận ra rằng được ở bên nhau là điều quý giá nhất
+                Hôm nay, trước sự chứng kiến của mọi người, từ khoảnh khắc này chúng ta nhẹ nhàng gọi nhau bằng hai
+                tiếng vợ chồng.”
+            </p>
+        </section>
+
+        <!-- GIA ĐÌNH -->
+        <section class="family">
+            <div class="family-box">
+                <h3>Nhà Trai</h3>
+                <p>Ông: <b>Đào Văn Khải</b></p>
+                <p>Bà: <b>Trần Thị Nga</b></p>
+                <p class="hometown">Quê quán: Nam Định</p>
             </div>
-    </section>
-    <!-- /#skills -->
-    <section id="experiences" class="default-section" data-scroll-reveal="enter from the bottom over .5s">
-        <div class="section-heading">
-            <h2 class="section-title">Experiences</h2>
+            <div class="family-box">
+                <h3>Nhà Gái</h3>
+                <p>Ông: <b>Khúc Văn Vinh</b></p>
+                <p>Bà: <b>Nguyễn Thị Phượng</b></p>
+                <p class="hometown">Quê quán: Thái Bình</p>
+            </div>
+        </section>
+
+        <!-- LỜI MỜI TIỆC -->
+        <section class="invite">
+            <h2>Trân trọng kính mời</h2>
+            <p id="personalized-invite" class="guest-text" style="display: none;">
+                <span id="guest-r"></span> <span id="guest-u"></span> <span id="guest-s"></span>
+            </p>
+            <p id="default-invite" class="guest-text">Bạn và người thương</p>
+        </section>
+
+        <!-- THỜI GIAN ĐỊA ĐIỂM TIỆC -->
+        <div class="time-place-container">
+            <div class="section-title-wrapper">
+                <p class="sub-invite">Dự bữa tiệc thân mật tại</p>
+            </div>
+            <!-- NHÀ TRAI -->
+            <section class="time-place groom-side">
+                <div class="time-place-header">
+                    <span class="side-label">Nhà Trai</span>
+                </div>
+                <h3>16:00 • Thứ Bảy</h3>
+                <p class="date-main">28 Tháng 03 Năm 2026</p>
+                <p class="date-lunar">(Tức 10 tháng Hai năm Bính Ngọ)</p>
+                <p class="location">📍 Tư gia nhà Trai, Nam Định</p>
+                <a class="btn" href="#">Chỉ đường</a>
+            </section>
+
+            <!-- NHÀ GÁI -->
+            <section class="time-place bride-side">
+                <div class="time-place-header">
+                    <span class="side-label">Nhà Gái</span>
+                </div>
+                <h3>16:00 • Thứ Bảy</h3>
+                <p class="date-main">28 Tháng 03 Năm 2026</p>
+                <p class="date-lunar">(Tức 10 tháng Hai năm Bính Ngọ)</p>
+                <p class="location">📍 Tư gia nhà Gái, Thái Bình</p>
+                <a class="btn" href="#">Chỉ đường</a>
+            </section>
         </div>
-        <!-- /.section-heading -->
-        <div class="container">
-            <div class="experiences-container">
-                <div class="experience-items">
-                    <div class="experience-item" data-scroll-reveal="enter from the bottom over .5s">
-                        <div class="name-designation" data-scroll-reveal="enter from the left after .5s">
-                            <h3 class="designation">Software Engineer</h3>
-                            <p class="name-of-org">Viettel Solutions</p>
-                        </div>
-                        <!-- /.name-designation -->
-                        <div class="stay-time light-blue">
-                            <p>
-                                09/2020
-                                <br /> -<br />
-                                Now
-                            </p>
-                        </div>
-                        <!-- /.stay-time -->
-                        <div class="comments" data-scroll-reveal="enter from the right after .5s">
-                            <ul>
-                                <li><span class="bold">Project</span>: VOFFICE</li>
-                                <li><span class="bold">Project Description</span>: Electronic office management software, electronic signing</li>
-                                <li><span class="bold">Team Size</span>: 10</li>
-                                <li><span class="bold">Responsiblities</span>:
-                                    <p>Responsible for developing software systems for Viettel Group.
-                                        Review, analyze and develop user requirements</p>
-                                    <p>Research and apply new technologies to the project</p>
-                                </li>
-                                <li><span class="bold">Accomplishments</span>: Improve coding, requiments analyzing, time management, networking, and communication skills.</li>
-                                <li><span class="bold">Technologies</span>:
-                                    <p>Java, Oracle, MYSQL / MariaDB</p>
-                                    <p>Docker, Gitlab, Jenkins</p>
-                                </li>
-                            </ul>
-                        </div>
-                        <!-- /.comments -->
-                    </div>
-                    <div class="experience-item" data-scroll-reveal="enter from the bottom over .5s">
-                        <div class="name-designation" data-scroll-reveal="enter from the left after .5s">
-                            <h3 class="designation">Back-end Developer</h3>
-                            <p class="name-of-org">HBLAB</p>
-                        </div>
-                        <!-- /.name-designation -->
-                        <div class="stay-time light-violet">
-                            <p>
-                                08/2018
-                                <br /> -<br />
-                                09/2019
-                            </p>
-                        </div>
-                        <!-- /.stay-time -->
-                        <div class="comments" data-scroll-reveal="enter from the right after .5s">
-                            <ul>
-                                <li><span class="bold">Project</span>: Purchase and sale system</li>
-                                <li><span class="bold">Project Description</span>: Website to exchange and buy game items </a>
-                                </li>
-                                <li><span class="bold">Team Size</span>: 10</li>
-                                <li><span class="bold">Responsiblities</span>:
-                                    <p>Analyze and work with the team to come up with solutions for customer requirements</p>
-                                    <p>Develop new features</p>
-                                    <p>Develop admin page and API</p>
-                                </li>
-                                <li><span class="bold">Accomplishments</span>: Have work experience, coding skills, learn important fundamentals
-                                </li>
-                                <li><span class="bold">Technologies</span>:
-                                    <p>PHP/Laravel, MySQL, RestfulAPI</p>
-                                    <p>Git/Gitlab</p>
-                                </li>
-                            </ul>
-                        </div>
-                        <!-- /.comments -->
-                    </div>
-                    <div class="experience-item" data-scroll-reveal="enter from the bottom over .5s">
-                        <div class="name-designation" data-scroll-reveal="enter from the left after .5s">
-                            <h3 class="designation">My Project</h3>
-                        </div>
-                        <div class="comments" data-scroll-reveal="enter from the right after .5s">
-                            <ul>
-                                <li><span class="bold"><a href="#" target="_blank">CRUD</a></span>
-                                </li>
-                            </ul>
-                        </div>
-                        <!-- /.comments -->
+
+        <!-- LỄ THÀNH HÔN -->
+        <section class="ceremony">
+            <div class="ceremony-card">
+                <div class="ceremony-image">
+                    <img src="assets/images/couple.jpg" alt="Lễ Thành Hôn">
+                    <div class="ceremony-overlay">
+                        <span class="ceremony-title">Lễ Thành Hôn</span>
                     </div>
                 </div>
-                <!-- /.experience-items -->
+                <div class="ceremony-content">
+                    <div class="ceremony-ornament">✿</div>
+                    <h3>14:00 • Chủ Nhật</h3>
+                    <div class="ceremony-date">
+                        <p class="date-main">29.03.2026</p>
+                        <p class="date-lunar">Tức 11 tháng Hai năm Bính Ngọ</p>
+                    </div>
+                    <div class="ceremony-location">
+                        <p>📍 Tư gia nhà Trai</p>
+                        <p class="sub-loc">Nam Trực, Nam Định</p>
+                    </div>
+                    <a class="btn-ceremony" href="#">Xem bản đồ</a>
+                </div>
             </div>
-            <!-- /.experiences-container -->
-        </div>
-    </section>
-    <!-- /#experiences -->
-    <section id="education" class="default-section" data-scroll-reveal="enter from the bottom over .5s">
-        <div class="section-heading">
-            <h2 class="section-title">Education</h2>
-        </div>
-        <!-- /.section-heading -->
-        <div class="container">
-            <div class="education-container">
-                <div class="education-items">
-                    <div class="col-md-12" data-scroll-reveal="enter from the top after .5s">
-                        <div class="education-item">
-                            <div class="edu-time light-green">
-                                <p>2015
-                                    <br /> -
-                                    <br /> 2020
-                                </p>
-                            </div>
-                            <!-- /.edu-time -->
-                            <div class="edu-title">
-                                <p class="edu-session">Engineering Degree</p>
-                                <p class="edu-inst">Hanoi University of Science and Technology</p>
-                            </div>
-                            <!-- /.edu-title -->
-                            <div class="edu-comments">
-                                <ul>
-                                    <li>Degree grade: Very good</li>
-                                </ul>
-                            </div>
-                            <!-- /.edu-comments -->
+        </section>
+
+        <!-- TIMELINE -->
+        <!-- <section class="timeline">
+            <h2>Chương trình tiệc</h2>
+            <ul>
+                <li><b>16:00</b> – Đón khách</li>
+                <li><b>16:30</b> – Khai tiệc</li>
+                <li><b>18:00</b> – Kết thúc</li>
+            </ul>
+        </section> -->
+
+        <!-- ẢNH + COUNTDOWN -->
+        <section class="countdown">
+            <div class="save-the-date">
+                <p class="std-script">Save The Date</p>
+                <h2 class="std-date">29.03.2026</h2>
+            </div>
+
+            <div class="countdown-container">
+                <div class="calendar-section">
+                    <h2 class="calendar-month">Tháng 3</h2>
+                    <div class="calendar-grid">
+                        <div class="calendar-day">1</div>
+                        <div class="calendar-day">2</div>
+                        <div class="calendar-day">3</div>
+                        <div class="calendar-day">4</div>
+                        <div class="calendar-day">5</div>
+                        <div class="calendar-day">6</div>
+                        <div class="calendar-day">7</div>
+                        <div class="calendar-day">8</div>
+                        <div class="calendar-day">9</div>
+                        <div class="calendar-day">10</div>
+                        <div class="calendar-day">11</div>
+                        <div class="calendar-day">12</div>
+                        <div class="calendar-day">13</div>
+                        <div class="calendar-day">14</div>
+                        <div class="calendar-day">15</div>
+                        <div class="calendar-day">16</div>
+                        <div class="calendar-day">17</div>
+                        <div class="calendar-day">18</div>
+                        <div class="calendar-day">19</div>
+                        <div class="calendar-day">20</div>
+                        <div class="calendar-day">21</div>
+                        <div class="calendar-day">22</div>
+                        <div class="calendar-day">23</div>
+                        <div class="calendar-day">24</div>
+                        <div class="calendar-day">25</div>
+                        <div class="calendar-day">26</div>
+                        <div class="calendar-day">27</div>
+                        <div class="calendar-day">28</div>
+                        <div class="calendar-day wedding-day">
+                            <span class="heart-icon">❤</span>
+                            <span class="day-number">29</span>
                         </div>
+                        <div class="calendar-day">30</div>
+                        <div class="calendar-day">31</div>
                     </div>
                 </div>
-                <!-- /.education-items -->
+                <div class="couple-photo">
+                    <img src="assets/images/countdown-couple.jpg" alt="Couple Photo">
+                </div>
             </div>
-            <!-- /.education-container -->
+
+            <div class="timer-display">
+                <div class="timer-item">
+                    <span id="days">00</span>
+                    <p>Ngày</p>
+                </div>
+                <div class="timer-item">
+                    <span id="hours">00</span>
+                    <p>Giờ</p>
+                </div>
+                <div class="timer-item">
+                    <span id="minutes">00</span>
+                    <p>Phút</p>
+                </div>
+                <div class="timer-item">
+                    <span id="seconds">00</span>
+                    <p>Giây</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- GALLERY -->
+        <section class="gallery">
+            <h2>Kỷ niệm chúng mình</h2>
+            <div class="gallery-container">
+                <div class="main-image-wrapper">
+                    <button class="gallery-nav prev" onclick="changeImage(-1)">‹</button>
+                    <div class="main-image">
+                        <img id="mainImage" src="assets/images/gallery1.jpg" onclick="openLightbox()">
+                        <button class="fullscreen-btn" onclick="openLightbox()">⛶</button>
+                    </div>
+                    <button class="gallery-nav next" onclick="changeImage(1)">›</button>
+                </div>
+                <div class="thumbnails">
+                    <img src="assets/images/gallery1.jpg" onclick="selectImage(0)" class="active">
+                    <img src="assets/images/gallery2.jpg" onclick="selectImage(1)">
+                    <img src="assets/images/gallery3.jpg" onclick="selectImage(2)">
+                    <img src="assets/images/gallery4.jpg" onclick="selectImage(3)">
+                    <img src="assets/images/gallery5.jpg" onclick="selectImage(4)">
+                    <img src="assets/images/gallery6.jpg" onclick="selectImage(5)">
+                </div>
+            </div>
+        </section>
+
+        <!-- LIGHTBOX -->
+        <div class="lightbox" id="lightbox" onclick="closeLightbox()">
+            <span class="close-btn">×</span>
+            <img id="lightbox-img">
+            <button class="lightbox-nav prev" onclick="event.stopPropagation(); navigateLightbox(-1)">‹</button>
+            <button class="lightbox-nav next" onclick="event.stopPropagation(); navigateLightbox(1)">›</button>
         </div>
-        <!-- /.container -->
-    </section>
-    <script src="js/jquery-3.3.1.min.js"></script>
-    <script src="script.js"></script>
-    <script src="js/jquery.sticky.js"></script>
+
+        <!-- PHONG THƯ -->
+        <section class="gift">
+            <h2>Hộp mừng cưới</h2>
+            <p class="gift-subtitle">Sự hiện diện của bạn là món quà quý giá nhất.<br>Nếu muốn gửi lời chúc mừng, hãy
+                nhấn
+                vào phong thư bên dưới.</p>
+            <div class="envelope-wrapper" onclick="openGiftModal()">
+                <div class="envelope">
+                    <div class="envelope-flap"></div>
+                    <div class="envelope-body">
+                        <span class="envelope-icon">💌</span>
+                    </div>
+                </div>
+                <p class="envelope-text">Nhấn để xem thông tin</p>
+            </div>
+        </section>
+
+        <!-- GIFT MODAL -->
+        <div class="gift-modal" id="giftModal" onclick="closeGiftModal()">
+            <div class="gift-modal-content" onclick="event.stopPropagation()">
+                <span class="gift-close" onclick="closeGiftModal()">×</span>
+                <h3>Hộp mừng cưới</h3>
+                <div class="qr-container">
+                    <div class="qr-item">
+                        <h4>Chú rể</h4>
+                        <img src="assets/images/qr-groom.png" alt="QR Chú rể">
+                        <p>Đào Duy Hoà</p>
+                    </div>
+                    <div class="qr-item">
+                        <h4>Cô dâu</h4>
+                        <img src="assets/images/qr-bride.png" alt="QR Cô dâu">
+                        <p>Khúc Thị Hiền</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- END -->
+        <section class="end">
+            <div>
+                <h2>Thank you!</h2>
+                <p>Cảm ơn bạn đã dành tình cảm cho chúng mình!
+                    Sự hiện diện của bạn chính là món quà ý nghĩa nhất, và chúng mình vô cùng trân quý, khi được cùng
+                    bạn chia sẻ niềm hạnh phúc trong ngày trọng đại này.</p>
+            </div>
+        </section>
+
+    </div>
     <script src="js/main.js"></script>
 </body>
-
-
 
 </html>
